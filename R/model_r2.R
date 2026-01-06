@@ -78,7 +78,7 @@ df |>
   ggplot2::geom_line()+
   ggplot2::geom_smooth(method = 'lm',se=F)+
   ggpubr::stat_cor(label.y.npc = 'bottom',label.x.npc = 'left')+
-  ggplot2::facet_wrap(~local,scales = 'free')+
+  ggplot2::facet_wrap(~local,scales = 'fixed')+
   ggplot2::ylab(expression('R'^2))
 
 ggplot2::ggsave('model_r2_forecast.png',units="in", width=12, height=6,
